@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <text x="500" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0f172a">
+    Diagrama de Classes - Controle Financeiro Pessoal
+  </text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(70 150)">
+      <rect width="250" height="250" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+      <rect width="250" height="52" rx="8" fill="#0f766e"/>
+      <text x="125" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Usuario</text>
+      <line x1="0" y1="52" x2="250" y2="52" stroke="#94a3b8" stroke-width="2"/>
+      <text x="18" y="86" font-size="16" fill="#0f172a">+ id: String</text>
+      <text x="18" y="116" font-size="16" fill="#0f172a">+ nome: String</text>
+      <text x="18" y="146" font-size="16" fill="#0f172a">+ email: String</text>
+      <text x="18" y="176" font-size="16" fill="#0f172a">+ senhaHash: String</text>
+      <line x1="0" y1="198" x2="250" y2="198" stroke="#cbd5e1"/>
+      <text x="18" y="230" font-size="16" fill="#0f172a">+ autenticar()</text>
+    </g>
+
+    <g transform="translate(375 150)">
+      <rect width="250" height="250" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+      <rect width="250" height="52" rx="8" fill="#2563eb"/>
+      <text x="125" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Categoria</text>
+      <line x1="0" y1="52" x2="250" y2="52" stroke="#94a3b8" stroke-width="2"/>
+      <text x="18" y="86" font-size="16" fill="#0f172a">+ id: String</text>
+      <text x="18" y="116" font-size="16" fill="#0f172a">+ nome: String</text>
+      <text x="18" y="146" font-size="16" fill="#0f172a">+ cor: String</text>
+      <text x="18" y="176" font-size="16" fill="#0f172a">+ tipo: Receita/Despesa</text>
+      <line x1="0" y1="198" x2="250" y2="198" stroke="#cbd5e1"/>
+      <text x="18" y="230" font-size="16" fill="#0f172a">+ listar()</text>
+    </g>
+
+    <g transform="translate(680 150)">
+      <rect width="250" height="250" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+      <rect width="250" height="52" rx="8" fill="#b91c1c"/>
+      <text x="125" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Transacao</text>
+      <line x1="0" y1="52" x2="250" y2="52" stroke="#94a3b8" stroke-width="2"/>
+      <text x="18" y="86" font-size="16" fill="#0f172a">+ id: String</text>
+      <text x="18" y="116" font-size="16" fill="#0f172a">+ tipo: Receita/Despesa</text>
+      <text x="18" y="146" font-size="16" fill="#0f172a">+ valor: Decimal</text>
+      <text x="18" y="176" font-size="16" fill="#0f172a">+ data: Date</text>
+      <text x="18" y="206" font-size="16" fill="#0f172a">+ descricao: String</text>
+      <line x1="0" y1="224" x2="250" y2="224" stroke="#cbd5e1"/>
+      <text x="18" y="246" font-size="16" fill="#0f172a">+ registrar()</text>
+    </g>
+
+    <line x1="320" y1="275" x2="375" y2="275" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="347" y="255" text-anchor="middle" font-size="14" fill="#334155">1..N</text>
+
+    <line x1="625" y1="275" x2="680" y2="275" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="653" y="255" text-anchor="middle" font-size="14" fill="#334155">1..N</text>
+
+    <path d="M195 400 C195 500, 805 500, 805 400" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="500" y="528" text-anchor="middle" font-size="15" fill="#334155">Usuario possui varias transacoes</text>
+  </g>
+</svg>
